@@ -1,0 +1,46 @@
+* {
+  /* soma o padding e o border ao height e ao width */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  color: #333;
+  --type-first: Helvetic, Arial, sans-serif;
+  --type-sceond: 'Spectral', Georgia;
+  font-family: var(--type-first);
+}
+
+h1, h2, h3, h4, p {
+  margin: 0px;
+}
+
+/* reseta estilos de listas */
+ul, li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* deixa a imagem responsiva, fazendo com que ela expanda até o maximo do container pai */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, input {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--type-first);
+  color: #333;
+}
+
+/* container geral da aplicação */
+.container {
+  /* limita o conteudo até 50rems = 800px */
+  max-width: 50rem;
+  /* padding para os lados de 16px */
+  padding: 0 1rem;
+  /* alinha ao centro */
+  margin: 0 auto;
+}
